@@ -17,7 +17,6 @@
    <category label="@ui_CGUIGeneral"/>
    <category label="@ui_CGOpticalTracking"/>
    <category label="@ui_CGInteraction"/>
-   <category label="@ui_CCCamera"/>
   </categories>
  </CustomisationUIHeader>
  <deviceoptions name=" VKB-Sim Gladiator NXT L   {0201231D-0000-0000-0000-504944564944}">
@@ -67,6 +66,9 @@
  </options>
  <modifiers />
  <actionmap name="spaceship_general">
+  <action name="v_close_all_doors">
+   <rebind input="js1_button7"/>
+  </action>
   <action name="v_cooler_throttle_down">
    <rebind input="js2_ "/>
   </action>
@@ -92,16 +94,13 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_open_all_doors">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button9"/>
   </action>
   <action name="v_self_destruct">
    <rebind input="js2_ "/>
   </action>
   <action name="v_toggle_all_doorlocks">
    <rebind input="js2_ "/>
-  </action>
-  <action name="v_toggle_all_doors">
-   <rebind input="js1_button19"/>
   </action>
   <action name="v_unlock_all_doors">
    <rebind input="js2_ "/>
@@ -1475,23 +1474,6 @@
   </action>
   <action name="pc_zoom_out">
    <rebind input="js2_ "/>
-  </action>
- </actionmap>
- <actionmap name="view_director_mode">
-  <action name="view_fov_in">
-   <rebind input="js1_hat1_down"/>
-  </action>
-  <action name="view_fov_out">
-   <rebind input="js1_hat1_up"/>
-  </action>
-  <action name="view_fstop_in">
-   <rebind input="js1_hat1_right"/>
-  </action>
-  <action name="view_fstop_out">
-   <rebind input="js1_hat1_left"/>
-  </action>
-  <action name="view_restore_defaults">
-   <rebind input="js1_button1"/>
   </action>
  </actionmap>
  <actionmap name="server_renderer">
