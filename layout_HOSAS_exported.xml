@@ -1,5 +1,5 @@
-<ActionMaps version="1" optionsVersion="2" rebindVersion="2" profileName="HOSAS_Scanning">
- <CustomisationUIHeader label="HOSAS_Scanning" description="" image="">
+<ActionMaps version="1" optionsVersion="2" rebindVersion="2" profileName="HOSAS">
+ <CustomisationUIHeader label="HOSAS" description="" image="">
   <devices>
    <keyboard instance="1"/>
    <mouse instance="1"/>
@@ -67,9 +67,6 @@
  </options>
  <modifiers />
  <actionmap name="spaceship_general">
-  <action name="v_close_all_doors">
-   <rebind input="js1_button19"/>
-  </action>
   <action name="v_cooler_throttle_down">
    <rebind input="js2_ "/>
   </action>
@@ -104,7 +101,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_toggle_all_doors">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button19"/>
   </action>
   <action name="v_unlock_all_doors">
    <rebind input="js2_ "/>
@@ -549,13 +546,13 @@
    <rebind input="js2_button1"/>
   </action>
   <action name="v_attack1_group2">
-   <rebind input="js2_button3"/>
+   <rebind input="js2_button5"/>
   </action>
   <action name="v_weapon_cycle_aimmode">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button19"/>
   </action>
   <action name="v_weapon_cycle_gimbal_free_mode">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button20"/>
   </action>
  </actionmap>
  <actionmap name="spaceship_missiles">
@@ -607,10 +604,10 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_weapon_countermeasure_launch_decoy">
-   <rebind input="js2_button3"/>
+   <rebind input="js2_button4"/>
   </action>
   <action name="v_weapon_countermeasure_launch_noise">
-   <rebind input="js2_button5"/>
+   <rebind input="js2_button3"/>
   </action>
  </actionmap>
  <actionmap name="spaceship_auto_weapons">
@@ -1482,19 +1479,19 @@
  </actionmap>
  <actionmap name="view_director_mode">
   <action name="view_fov_in">
-   <rebind input="js2_ "/>
+   <rebind input="js1_hat1_down"/>
   </action>
   <action name="view_fov_out">
-   <rebind input="js2_ "/>
+   <rebind input="js1_hat1_up"/>
   </action>
   <action name="view_fstop_in">
-   <rebind input="js2_ "/>
+   <rebind input="js1_hat1_right"/>
   </action>
   <action name="view_fstop_out">
-   <rebind input="js2_ "/>
+   <rebind input="js1_hat1_left"/>
   </action>
   <action name="view_restore_defaults">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button1"/>
   </action>
  </actionmap>
  <actionmap name="server_renderer">
