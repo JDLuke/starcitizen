@@ -114,7 +114,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_view_dynamic_zoom_abs">
-   <rebind input="js2_z"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="v_view_dynamic_zoom_abs_toggle">
    <rebind input="js2_ "/>
@@ -123,10 +123,10 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_view_dynamic_zoom_rel_in">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button23"/>
   </action>
   <action name="v_view_dynamic_zoom_rel_out">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button24"/>
   </action>
   <action name="v_view_freelook_mode">
    <rebind input="js2_button16"/>
@@ -147,19 +147,25 @@
    <rebind input="js2_roty"/>
   </action>
   <action name="v_view_pitch_down">
-   <rebind input="js2_ "/>
+   <rebind input="js1_hat1_down"/>
   </action>
   <action name="v_view_pitch_up">
-   <rebind input="js2_ "/>
+   <rebind input="js1_hat1_up"/>
   </action>
   <action name="v_view_yaw">
    <rebind input="js2_rotx"/>
   </action>
+  <action name="v_view_yaw_left">
+   <rebind input="js1_hat1_left"/>
+  </action>
+  <action name="v_view_yaw_right">
+   <rebind input="js1_hat1_right"/>
+  </action>
   <action name="v_view_zoom_in">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button23"/>
   </action>
   <action name="v_view_zoom_out">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button24"/>
   </action>
  </actionmap>
  <actionmap name="spaceship_movement">
@@ -640,13 +646,13 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_power_toggle">
-   <rebind input="js2_button28"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="v_power_toggle_shields">
    <rebind input="js2_ "/>
   </action>
   <action name="v_power_toggle_thrusters">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button28"/>
   </action>
   <action name="v_power_toggle_weapons">
    <rebind input="js2_ "/>
