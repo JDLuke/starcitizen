@@ -11,10 +11,16 @@ else
 	SC_PATH="/c/Program Files/Roberts Space Industries/StarCitizen/$REGION/USER/Controls/Mappings"
 	NAME=$1
 
-	echo Copying exported control layout $NAME from SC $REGION
-
 	FILEBASE=$SC_PATH/layout_$NAME
 	FILENAME="$FILEBASE"_exported.xml
-	cp "$FILENAME" .
+	if [ -r "$FILENAME" ]
+	then
+		
+        	echo Copying exported control layout $NAME from SC $REGION
+
+		cp "$FILENAME" .
+	else
+		echo Unable to read $FILENAME
+	fi
 fi
 
