@@ -940,13 +940,13 @@
  </actionmap>
  <actionmap name="zero_gravity_eva">
   <action name="eva_boost">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button21"/>
   </action>
   <action name="eva_brake">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button22"/>
   </action>
   <action name="eva_pitch">
-   <rebind input="js2_ "/>
+   <rebind input="js2_y"/>
   </action>
   <action name="eva_pitch_down">
    <rebind input="js2_ "/>
@@ -955,7 +955,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="eva_roll">
-   <rebind input="js2_ "/>
+   <rebind input="js2_rotz"/>
   </action>
   <action name="eva_roll_left">
    <rebind input="js2_ "/>
@@ -973,13 +973,13 @@
    <rebind input="js2_ "/>
   </action>
   <action name="eva_strafe_lateral">
-   <rebind input="js2_ "/>
+   <rebind input="js1_x"/>
   </action>
   <action name="eva_strafe_left">
    <rebind input="js2_ "/>
   </action>
   <action name="eva_strafe_longitudinal">
-   <rebind input="js2_ "/>
+   <rebind input="js1_y"/>
   </action>
   <action name="eva_strafe_right">
    <rebind input="js2_ "/>
@@ -988,7 +988,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="eva_strafe_vertical">
-   <rebind input="js2_ "/>
+   <rebind input="js1_rotz"/>
   </action>
   <action name="eva_toggle_headlook_mode">
    <rebind input="js2_ "/>
@@ -997,19 +997,19 @@
    <rebind input="js2_ "/>
   </action>
   <action name="eva_view_pitch_down">
-   <rebind input="js2_ "/>
+   <rebind input="js1_hat1_down"/>
   </action>
   <action name="eva_view_pitch_up">
-   <rebind input="js2_ "/>
+   <rebind input="js1_hat1_up"/>
   </action>
   <action name="eva_view_yaw_left">
-   <rebind input="js2_ "/>
+   <rebind input="js1_hat1_left"/>
   </action>
   <action name="eva_view_yaw_right">
-   <rebind input="js2_ "/>
+   <rebind input="js1_hat1_right"/>
   </action>
   <action name="eva_yaw">
-   <rebind input="js2_ "/>
+   <rebind input="js2_x"/>
   </action>
   <action name="eva_yaw_left">
    <rebind input="js2_ "/>
