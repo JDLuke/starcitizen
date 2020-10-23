@@ -29,7 +29,13 @@
   <option input="y" saturation="0.97019994"/>
   <option input="y" saturation="0.97019994"/>
  </deviceoptions>
- <options type="keyboard" instance="1" Product="Keyboard {6F1D2B61-D5A0-11CF-BFC7-444553540000}"/>
+ <options type="keyboard" instance="1" Product="Keyboard {6F1D2B61-D5A0-11CF-BFC7-444553540000}">
+  <fps exponent="1.4"/>
+  <flight exponent="1.4"/>
+  <turret exponent="1.4"/>
+  <any_vehicle exponent="1.4"/>
+  <manned_ground_vehicle exponent="1.4"/>
+ </options>
  <options type="joystick" instance="1" Product=" VKB-Sim Gladiator NXT L   {0201231D-0000-0000-0000-504944564944}">
   <fps_view_pitch exponent="1.7"/>
   <fps_view_yaw exponent="1.4"/>
