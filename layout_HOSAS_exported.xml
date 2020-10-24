@@ -30,7 +30,7 @@
   <option input="y" saturation="0.97019994"/>
  </deviceoptions>
  <options type="keyboard" instance="1" Product="Keyboard {6F1D2B61-D5A0-11CF-BFC7-444553540000}">
-  <fps exponent="1.4"/>
+  <fps exponent="1.6"/>
   <flight exponent="1.4"/>
   <turret exponent="1.4"/>
   <any_vehicle exponent="1.4"/>
@@ -206,7 +206,7 @@
    <rebind input="js1_button12"/>
   </action>
   <action name="v_ifcs_toggle_speed_limiter">
-   <rebind input="js1_button27"/>
+   <rebind input="js1_button8"/>
   </action>
   <action name="v_ifcs_toggle_vector_decoupling">
    <rebind input="js1_button13"/>
@@ -1392,7 +1392,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="pc_interaction_mode">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button5"/>
   </action>
   <action name="pc_personal_back">
    <rebind input="js2_ "/>
