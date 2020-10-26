@@ -287,7 +287,7 @@
    <rebind input="js1_button3"/>
   </action>
   <action name="v_toggle_vtol">
-   <rebind input="js1_button18"/>
+   <rebind input="js1_button19"/>
   </action>
   <action name="v_yaw">
    <rebind input="js2_x"/>
@@ -481,28 +481,25 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_jettison_volatile_cargo">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button15" activationMode="double_tap"/>
   </action>
   <action name="v_mining_throttle">
-   <rebind input="js2_ "/>
+   <rebind input="js2_z"/>
   </action>
   <action name="v_mining_use_consumable1">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button11"/>
   </action>
   <action name="v_mining_use_consumable2">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button14"/>
   </action>
   <action name="v_mining_use_consumable3">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="v_toggle_mining_laser_fire">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button12"/>
   </action>
   <action name="v_toggle_mining_laser_type">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button3"/>
   </action>
   <action name="v_toggle_mining_mode">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button6"/>
   </action>
  </actionmap>
  <actionmap name="turret_main">
@@ -771,7 +768,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="free_thirdperson_camera">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button16"/>
   </action>
   <action name="gp_crouch">
    <rebind input="js2_ "/>
@@ -882,7 +879,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="thirdperson">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button18"/>
   </action>
   <action name="throw_overhand">
    <rebind input="js2_ "/>
@@ -890,8 +887,11 @@
   <action name="throw_underhand">
    <rebind input="js2_ "/>
   </action>
+  <action name="toggleEquipHelmet">
+   <rebind input="js1_button3"/>
+  </action>
   <action name="toggle_flashlight">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button4"/>
   </action>
   <action name="use">
    <rebind input="js2_ "/>
@@ -1026,19 +1026,19 @@
  </actionmap>
  <actionmap name="vehicle_general">
   <action name="v_attack1_group1">
-   <rebind input="js1_ "/>
+   <rebind input="js2_button1"/>
   </action>
   <action name="v_attack1_group2">
-   <rebind input="js1_ "/>
+   <rebind input="js2_button5"/>
   </action>
   <action name="v_close_all_doors">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button7"/>
   </action>
   <action name="v_exit">
    <rebind input="js2_ "/>
   </action>
   <action name="v_flightready">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button27"/>
   </action>
   <action name="v_horn">
    <rebind input="js2_ "/>
@@ -1047,15 +1047,12 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_open_all_doors">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button9"/>
   </action>
   <action name="v_starmap">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button3"/>
   </action>
   <action name="v_toggle_all_doorlocks">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="v_toggle_all_doors">
    <rebind input="js2_ "/>
   </action>
   <action name="v_unlock_all_doors">
@@ -1074,10 +1071,10 @@
    <rebind input="js1_ "/>
   </action>
   <action name="v_view_zoom_in">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button23"/>
   </action>
   <action name="v_view_zoom_out">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button24"/>
   </action>
   <action name="visor_wipe">
    <rebind input="js2_ "/>
@@ -1085,19 +1082,19 @@
  </actionmap>
  <actionmap name="vehicle_driver">
   <action name="v_attack1">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button1"/>
   </action>
   <action name="v_attack2">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button5"/>
   </action>
   <action name="v_boost">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button21"/>
   </action>
   <action name="v_brake">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button22"/>
   </action>
   <action name="v_move">
-   <rebind input="js2_ "/>
+   <rebind input="js1_y"/>
   </action>
   <action name="v_move_back">
    <rebind input="js2_ "/>
@@ -1121,13 +1118,13 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_view_dynamic_zoom_rel_in">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button23"/>
   </action>
   <action name="v_view_dynamic_zoom_rel_out">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button24"/>
   </action>
   <action name="v_yaw">
-   <rebind input="js2_ "/>
+   <rebind input="js2_x"/>
   </action>
   <action name="v_yaw_left">
    <rebind input="js2_ "/>
