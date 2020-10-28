@@ -20,14 +20,26 @@
   </categories>
  </CustomisationUIHeader>
  <deviceoptions name=" VKB-Sim Gladiator NXT L   {0201231D-0000-0000-0000-504944564944}">
-  <option input="x" deadzone="0.049499996"/>
-  <option input="y" deadzone="0.049499996"/>
-  <option input="z" deadzone="0.049499996"/>
-  <option input="slider1" deadzone="0.0297"/>
+  <option input="x" deadzone="0"/>
+  <option input="y" deadzone="0"/>
+  <option input="z" deadzone="0"/>
+  <option input="slider1" deadzone="0"/>
+  <option input="x" saturation="0.99000001"/>
   <option input="x" saturation="0.97019994"/>
-  <option input="x" saturation="0.97019994"/>
+  <option input="y" saturation="0.99000001"/>
   <option input="y" saturation="0.97019994"/>
-  <option input="y" saturation="0.97019994"/>
+  <option input="rotx" deadzone="0"/>
+  <option input="roty" deadzone="0"/>
+  <option input="rotz" deadzone="0"/>
+  <option input="slider2" deadzone="0"/>
+ </deviceoptions>
+ <deviceoptions name=" VKB-Sim Gladiator NXT R   {0200231D-0000-0000-0000-504944564944}">
+  <option input="x" deadzone="0"/>
+  <option input="y" deadzone="0"/>
+  <option input="rotx" deadzone="0"/>
+  <option input="roty" deadzone="0"/>
+  <option input="rotz" deadzone="0"/>
+  <option input="slider2" deadzone="0"/>
  </deviceoptions>
  <options type="keyboard" instance="1" Product="Keyboard {6F1D2B61-D5A0-11CF-BFC7-444553540000}">
   <fps exponent="1.6"/>
@@ -37,38 +49,26 @@
   <manned_ground_vehicle exponent="1.4"/>
  </options>
  <options type="joystick" instance="1" Product=" VKB-Sim Gladiator NXT L   {0201231D-0000-0000-0000-504944564944}">
-  <fps_view_pitch exponent="1.7"/>
-  <fps_view_yaw exponent="1.4"/>
-  <fps_move_lateral exponent="1.4"/>
-  <fps_move_longitudinal invert="1" exponent="1.4"/>
-  <flight_move_pitch exponent="1.4"/>
-  <flight_move_yaw exponent="1.4"/>
-  <flight_move_roll exponent="1.4"/>
-  <flight_move_strafe_vertical exponent="1.4"/>
-  <flight_move_strafe_lateral exponent="1.4"/>
-  <flight_move_strafe_longitudinal invert="1" exponent="1.4"/>
-  <flight_move_strafe_forward exponent="1.4"/>
-  <flight_move_strafe_backward exponent="1.4"/>
-  <flight_move_speed_range invert="1" exponent="1.4"/>
-  <flight_move_accel_range exponent="1.4"/>
+  <fps exponent="1.6"/>
+  <fps_move_longitudinal invert="1"/>
+  <flight exponent="1.6"/>
+  <flight_move_strafe_longitudinal invert="1"/>
+  <flight_move_speed_range invert="1"/>
   <flight_zoom invert="1"/>
+  <turret exponent="1.6"/>
+  <manned_ground_vehicle exponent="1.6"/>
+  <mining exponent="1.6"/>
  </options>
  <options type="joystick" instance="2" Product=" VKB-Sim Gladiator NXT R   {0200231D-0000-0000-0000-504944564944}">
-  <fps_view_pitch exponent="1.7"/>
-  <fps_view_yaw exponent="1.4"/>
-  <fps_move_lateral exponent="1.4"/>
-  <fps_move_longitudinal invert="1" exponent="1.4"/>
-  <flight_move_pitch exponent="1.4"/>
-  <flight_move_yaw exponent="1.4"/>
-  <flight_move_roll exponent="1.4"/>
-  <flight_move_strafe_vertical exponent="1.4"/>
-  <flight_move_strafe_lateral exponent="1.4"/>
-  <flight_move_strafe_longitudinal invert="1" exponent="1.4"/>
-  <flight_move_strafe_forward exponent="1.4"/>
-  <flight_move_strafe_backward exponent="1.4"/>
-  <flight_move_speed_range invert="1" exponent="1.4"/>
-  <flight_move_accel_range exponent="1.4"/>
+  <fps exponent="1.6"/>
+  <fps_move_longitudinal invert="1"/>
+  <flight exponent="1.6"/>
+  <flight_move_strafe_longitudinal invert="1"/>
+  <flight_move_speed_range invert="1"/>
   <flight_zoom invert="1"/>
+  <turret exponent="1.6"/>
+  <manned_ground_vehicle exponent="1.6"/>
+  <mining exponent="1.6"/>
  </options>
  <modifiers />
  <actionmap name="spaceship_general">
@@ -327,7 +327,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_target_lock_selected">
-   <rebind input="js2_button13"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="v_target_pin_selected">
    <rebind input="js2_ "/>
@@ -336,40 +336,40 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_target_remove_all_pins">
-   <rebind input="js2_button15"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="v_target_toggle_lock_index_1">
-   <rebind input="js2_button11"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="v_target_toggle_lock_index_2">
-   <rebind input="js2_button14"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="v_target_toggle_lock_index_3">
-   <rebind input="js2_button12"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="v_target_toggle_pin_index_1">
    <rebind input="js2_ "/>
   </action>
   <action name="v_target_toggle_pin_index_1_hold">
-   <rebind input="js2_button11"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="v_target_toggle_pin_index_2">
    <rebind input="js2_ "/>
   </action>
   <action name="v_target_toggle_pin_index_2_hold">
-   <rebind input="js2_button14"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="v_target_toggle_pin_index_3">
    <rebind input="js2_ "/>
   </action>
   <action name="v_target_toggle_pin_index_3_hold">
-   <rebind input="js2_button12"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="v_target_tracking_auto_zoom">
    <rebind input="js2_ "/>
   </action>
   <action name="v_target_unlock_selected">
-   <rebind input="js2_button13"/>
+   <rebind input="js2_button15"/>
   </action>
   <action name="v_target_unpin_selected">
    <rebind input="js2_ "/>
@@ -395,22 +395,22 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_target_cycle_attacker_reset">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button11"/>
   </action>
   <action name="v_target_cycle_friendly_back">
    <rebind input="js2_ "/>
   </action>
   <action name="v_target_cycle_friendly_fwd">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button13"/>
   </action>
   <action name="v_target_cycle_friendly_reset">
    <rebind input="js2_ "/>
   </action>
   <action name="v_target_cycle_hostile_back">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button14"/>
   </action>
   <action name="v_target_cycle_hostile_fwd">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button12"/>
   </action>
   <action name="v_target_cycle_hostile_reset">
    <rebind input="js2_ "/>
@@ -1088,13 +1088,13 @@
    <rebind input="js2_button5"/>
   </action>
   <action name="v_boost">
-   <rebind input="js1_button21"/>
+   <rebind input="js2_button21"/>
   </action>
   <action name="v_brake">
-   <rebind input="js1_button22"/>
+   <rebind input="js2_button22"/>
   </action>
   <action name="v_move">
-   <rebind input="js1_y"/>
+   <rebind input="js2_y"/>
   </action>
   <action name="v_move_back">
    <rebind input="js2_ "/>
