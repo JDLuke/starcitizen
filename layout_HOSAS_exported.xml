@@ -24,9 +24,9 @@
   <option input="y" deadzone="0"/>
   <option input="z" deadzone="0"/>
   <option input="slider1" deadzone="0"/>
-  <option input="x" saturation="0.99000001"/>
   <option input="x" saturation="0.97019994"/>
-  <option input="y" saturation="0.99000001"/>
+  <option input="x" saturation="0.97019994"/>
+  <option input="y" saturation="0.97019994"/>
   <option input="y" saturation="0.97019994"/>
   <option input="rotx" deadzone="0"/>
   <option input="roty" deadzone="0"/>
@@ -722,7 +722,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_starmap">
-   <rebind input="js2_ "/>
+   <rebind input="js1_button27"/>
   </action>
   <action name="visor_wipe">
    <rebind input="js2_ "/>
