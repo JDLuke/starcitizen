@@ -20,8 +20,8 @@
   </categories>
  </CustomisationUIHeader>
  <deviceoptions name=" VKB-Sim Gladiator NXT L   {0201231D-0000-0000-0000-504944564944}">
-  <option input="x" deadzone="0"/>
-  <option input="y" deadzone="0"/>
+  <option input="x" deadzone="0.0297"/>
+  <option input="y" deadzone="0.0297"/>
   <option input="z" deadzone="0"/>
   <option input="slider1" deadzone="0"/>
   <option input="x" saturation="0.97019994"/>
@@ -34,41 +34,46 @@
   <option input="slider2" deadzone="0"/>
  </deviceoptions>
  <deviceoptions name=" VKB-Sim Gladiator NXT R   {0200231D-0000-0000-0000-504944564944}">
-  <option input="x" deadzone="0"/>
-  <option input="y" deadzone="0"/>
+  <option input="x" deadzone="0.0198"/>
+  <option input="y" deadzone="0.0198"/>
   <option input="rotx" deadzone="0"/>
   <option input="roty" deadzone="0"/>
   <option input="rotz" deadzone="0"/>
   <option input="slider2" deadzone="0"/>
+  <option input="z" deadzone="0.0198"/>
+  <option input="slider2" saturation="0.99000001"/>
+  <option input="slider1" saturation="0.99000001"/>
+  <option input="rotz" saturation="0.99000001"/>
+  <option input="roty" saturation="0.99000001"/>
+  <option input="rotx" saturation="0.99000001"/>
+ </deviceoptions>
+ <deviceoptions name="Mouse">
+  <option input="@pause_OptionsMouseSmoothing" saturation="0.089999989"/>
+  <option input="@pause_OptionsMouseSmoothing" saturation="0.089999989"/>
  </deviceoptions>
  <options type="keyboard" instance="1" Product="Keyboard {6F1D2B61-D5A0-11CF-BFC7-444553540000}">
-  <fps exponent="1.6"/>
-  <flight exponent="1.4"/>
+  <flight exponent="1.3000001"/>
   <turret exponent="1.4"/>
   <any_vehicle exponent="1.4"/>
   <manned_ground_vehicle exponent="1.4"/>
  </options>
- <options type="joystick" instance="1" Product=" VKB-Sim Gladiator NXT L   {0201231D-0000-0000-0000-504944564944}">
-  <fps exponent="1.6"/>
-  <fps_move_longitudinal invert="1"/>
-  <flight exponent="1.6"/>
-  <flight_move_strafe_longitudinal invert="1"/>
-  <flight_move_speed_range invert="1"/>
-  <flight_zoom invert="1"/>
-  <turret exponent="1.6"/>
-  <manned_ground_vehicle exponent="1.6"/>
-  <mining exponent="1.6"/>
- </options>
  <options type="joystick" instance="2" Product=" VKB-Sim Gladiator NXT R   {0200231D-0000-0000-0000-504944564944}">
-  <fps exponent="1.6"/>
-  <fps_move_longitudinal invert="1"/>
-  <flight exponent="1.6"/>
-  <flight_move_strafe_longitudinal invert="1"/>
-  <flight_move_speed_range invert="1"/>
-  <flight_zoom invert="1"/>
-  <turret exponent="1.6"/>
-  <manned_ground_vehicle exponent="1.6"/>
-  <mining exponent="1.6"/>
+  <fps exponent="2"/>
+  <flight exponent="2"/>
+  <flight_move_accel_range exponent="0.2"/>
+  <turret exponent="2"/>
+  <manned_ground_vehicle exponent="2"/>
+  <mining exponent="2"/>
+  <mining_throttle exponent="0.2"/>
+ </options>
+ <options type="joystick" instance="1" Product=" VKB-Sim Gladiator NXT L   {0201231D-0000-0000-0000-504944564944}">
+  <fps exponent="2"/>
+  <flight exponent="2"/>
+  <flight_move_accel_range exponent="0.2"/>
+  <turret exponent="2"/>
+  <manned_ground_vehicle exponent="2"/>
+  <mining exponent="2"/>
+  <mining_throttle exponent="0.60000002"/>
  </options>
  <modifiers />
  <actionmap name="spaceship_general">
