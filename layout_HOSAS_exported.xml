@@ -42,9 +42,14 @@
   <option input="slider2" deadzone="0"/>
   <option input="z" deadzone="0.0198"/>
   <option input="slider2" saturation="0.99000001"/>
+  <option input="slider2" saturation="0.99000001"/>
+  <option input="slider1" saturation="0.99000001"/>
   <option input="slider1" saturation="0.99000001"/>
   <option input="rotz" saturation="0.99000001"/>
+  <option input="rotz" saturation="0.99000001"/>
   <option input="roty" saturation="0.99000001"/>
+  <option input="roty" saturation="0.99000001"/>
+  <option input="rotx" saturation="0.99000001"/>
   <option input="rotx" saturation="0.99000001"/>
  </deviceoptions>
  <deviceoptions name="Mouse">
@@ -57,17 +62,6 @@
   <any_vehicle exponent="1.4"/>
   <manned_ground_vehicle exponent="1.4"/>
  </options>
- <options type="joystick" instance="2" Product=" VKB-Sim Gladiator NXT R   {0200231D-0000-0000-0000-504944564944}">
-  <fps exponent="2"/>
-  <fps_move_longitudinal invert="1"/>
-  <flight exponent="2"/>
-  <flight_move_strafe_longitudinal invert="1"/>
-  <flight_move_accel_range exponent="0.2"/>
-  <turret exponent="2"/>
-  <manned_ground_vehicle exponent="2"/>
-  <mining exponent="2"/>
-  <mining_throttle exponent="0.2"/>
- </options>
  <options type="joystick" instance="1" Product=" VKB-Sim Gladiator NXT L   {0201231D-0000-0000-0000-504944564944}">
   <fps exponent="2"/>
   <fps_move_longitudinal invert="1"/>
@@ -79,6 +73,15 @@
   <manned_ground_vehicle exponent="2"/>
   <mining exponent="2"/>
   <mining_throttle exponent="0.60000002"/>
+ </options>
+ <options type="joystick" instance="2" Product=" VKB-Sim Gladiator NXT R   {0200231D-0000-0000-0000-504944564944}">
+  <fps exponent="2"/>
+  <flight exponent="2"/>
+  <flight_move_accel_range exponent="0.2"/>
+  <turret exponent="2"/>
+  <manned_ground_vehicle exponent="2"/>
+  <mining exponent="2"/>
+  <mining_throttle exponent="0.40000001"/>
  </options>
  <modifiers />
  <actionmap name="spaceship_general">
@@ -337,7 +340,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_target_lock_selected">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button15"/>
   </action>
   <action name="v_target_pin_selected">
    <rebind input="js2_ "/>
