@@ -68,11 +68,12 @@
   <flight exponent="2"/>
   <flight_move_strafe_vertical invert="1"/>
   <flight_move_strafe_longitudinal invert="1"/>
+  <flight_move_speed_range invert="1"/>
   <flight_move_accel_range exponent="0.2"/>
   <turret exponent="2"/>
   <manned_ground_vehicle exponent="2"/>
   <mining exponent="2"/>
-  <mining_throttle exponent="0.60000002"/>
+  <mining_throttle exponent="0.2"/>
  </options>
  <options type="joystick" instance="2" Product=" VKB-Sim Gladiator NXT R   {0200231D-0000-0000-0000-504944564944}">
   <fps exponent="2"/>
@@ -80,8 +81,6 @@
   <flight_move_accel_range exponent="0.2"/>
   <turret exponent="2"/>
   <manned_ground_vehicle exponent="2"/>
-  <mining exponent="2"/>
-  <mining_throttle exponent="0.40000001"/>
  </options>
  <modifiers />
  <actionmap name="spaceship_general">
@@ -396,7 +395,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_target_cycle_all_fwd">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button10"/>
   </action>
   <action name="v_target_cycle_all_reset">
    <rebind input="js2_ "/>
@@ -411,13 +410,13 @@
    <rebind input="js2_button11"/>
   </action>
   <action name="v_target_cycle_friendly_back">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button9"/>
   </action>
   <action name="v_target_cycle_friendly_fwd">
-   <rebind input="js2_button13"/>
+   <rebind input="js2_button7"/>
   </action>
   <action name="v_target_cycle_friendly_reset">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button8"/>
   </action>
   <action name="v_target_cycle_hostile_back">
    <rebind input="js2_button14"/>
@@ -426,7 +425,7 @@
    <rebind input="js2_button12"/>
   </action>
   <action name="v_target_cycle_hostile_reset">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button13"/>
   </action>
   <action name="v_target_cycle_in_view_back">
    <rebind input="js2_ "/>
@@ -456,7 +455,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_target_cycle_subitem_fwd">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button6"/>
   </action>
   <action name="v_target_cycle_subitem_reset">
    <rebind input="js2_ "/>
@@ -464,7 +463,7 @@
  </actionmap>
  <actionmap name="spaceship_target_hailing">
   <action name="v_target_hail">
-   <rebind input="js2_button6"/>
+   <rebind input="js2_button20"/>
   </action>
  </actionmap>
  <actionmap name="spaceship_scanning">
@@ -573,7 +572,7 @@
    <rebind input="js2_button19"/>
   </action>
   <action name="v_weapon_cycle_gimbal_free_mode">
-   <rebind input="js2_button20"/>
+   <rebind input="js2_ "/>
   </action>
  </actionmap>
  <actionmap name="spaceship_missiles">
