@@ -10,6 +10,7 @@ else
 	REGION="PTU"
 	SC_PATH="/c/Program Files/Roberts Space Industries/StarCitizen/$REGION/USER/Controls/Mappings"
 	NAME=$1
+	DESTINATION=data/controls
 
 	FILEBASE=$SC_PATH
 	#layout_$NAME
@@ -26,3 +27,4 @@ else
 	fi
 fi
 
+#/c/Users/John Luke/starcitizen/data/controls

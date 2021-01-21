@@ -10,6 +10,7 @@ else
 	REGION="LIVE"
 	SC_PATH="/c/Program Files/Roberts Space Industries/StarCitizen/$REGION/USER/Controls/Mappings"
 	NAME=$1
+	DESTINATION=data/controls
 
 	FILEBASE=$SC_PATH
 	#layout_$NAME
@@ -20,9 +21,10 @@ else
 	if [ -r "$SCFILENAME" ]
 	then
         	echo Copying exported control layout $NAME from SC $REGION
-		cp "$SCFILENAME" .
+		cp "$SCFILENAME" $DESTINATION
 	else
 		echo Unable to read $FILENAME
 	fi
 fi
 
+#/starcitizen/data/controls
