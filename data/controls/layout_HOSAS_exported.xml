@@ -71,20 +71,14 @@
   <mgv_move_yaw exponent="2.3"/>
  </options>
  <options type="joystick" instance="1" Product=" VKB-Sim Gladiator NXT L   {0201231D-0000-0000-0000-504944564944}">
-  <fps_move_lateral invert="1"/>
   <fps_move_longitudinal invert="1"/>
-  <flight_move_pitch exponent="2.4000001"/>
-  <flight_move_yaw exponent="2.5"/>
-  <flight_move_roll exponent="2.5"/>
-  <flight_move_strafe_vertical invert="1" exponent="2.5"/>
-  <flight_move_strafe_lateral exponent="2.5"/>
-  <flight_move_strafe_longitudinal invert="1" exponent="2.4000001"/>
-  <flight_move_strafe_forward exponent="2.5"/>
-  <flight_move_strafe_backward exponent="2.5"/>
-  <flight_move_speed_range_abs exponent="0.90000004"/>
+  <flight_move_strafe_vertical invert="1"/>
+  <flight_move_strafe_longitudinal invert="1"/>
+  <flight_view exponent="1"/>
   <mining_throttle invert="0"/>
  </options>
  <options type="joystick" instance="2" Product=" VKB-Sim Gladiator NXT R   {0200231D-0000-0000-0000-504944564944}">
+  <flight_view exponent="1"/>
   <mining_throttle invert="0"/>
  </options>
  <modifiers />
