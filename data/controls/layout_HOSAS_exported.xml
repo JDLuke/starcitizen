@@ -19,8 +19,8 @@
   </categories>
  </CustomisationUIHeader>
  <deviceoptions name=" VKB-Sim Gladiator NXT L   {0201231D-0000-0000-0000-504944564944}">
-  <option input="x" deadzone="0.0297"/>
-  <option input="y" deadzone="0.0297"/>
+  <option input="x" deadzone="0"/>
+  <option input="y" deadzone="0"/>
   <option input="z" deadzone="0"/>
   <option input="slider1" deadzone="0"/>
   <option input="x" saturation="0.97019994"/>
@@ -33,13 +33,13 @@
   <option input="slider2" deadzone="0"/>
  </deviceoptions>
  <deviceoptions name=" VKB-Sim Gladiator NXT R   {0200231D-0000-0000-0000-504944564944}">
-  <option input="x" deadzone="0.0198"/>
-  <option input="y" deadzone="0.0198"/>
+  <option input="x" deadzone="0"/>
+  <option input="y" deadzone="0"/>
   <option input="rotx" deadzone="0"/>
   <option input="roty" deadzone="0"/>
   <option input="rotz" deadzone="0"/>
   <option input="slider2" deadzone="0"/>
-  <option input="z" deadzone="0.0198"/>
+  <option input="z" deadzone="0"/>
   <option input="slider2" saturation="0.99000001"/>
   <option input="slider2" saturation="0.99000001"/>
   <option input="slider1" saturation="0.99000001"/>
@@ -377,10 +377,10 @@
  </actionmap>
  <actionmap name="spaceship_targeting_advanced">
   <action name="v_target_cycle_all_back">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button14"/>
   </action>
   <action name="v_target_cycle_all_fwd">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button12"/>
   </action>
   <action name="v_target_cycle_all_reset">
    <rebind input="js2_ "/>
@@ -431,10 +431,10 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_target_cycle_selection_back">
-   <rebind input="js2_button14"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="v_target_cycle_selection_fwd">
-   <rebind input="js2_button12"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="v_target_cycle_selection_reset">
    <rebind input="js2_ "/>
