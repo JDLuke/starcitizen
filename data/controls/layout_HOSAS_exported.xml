@@ -560,7 +560,7 @@
    <rebind input="js2_button1"/>
   </action>
   <action name="v_attack1_group2">
-   <rebind input="js2_button5"/>
+   <rebind input="js1_button1"/>
   </action>
   <action name="v_weapon_cycle_aimmode">
    <rebind input="js2_button19"/>
