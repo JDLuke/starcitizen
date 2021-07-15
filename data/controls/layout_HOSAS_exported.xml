@@ -7,6 +7,7 @@
    <joystick instance="2"/>
   </devices>
   <categories>
+   <category label="@ui_CCSeatGeneral"/>
    <category label="@ui_CCSpaceFlight"/>
    <category label="@ui_CGLightControllerDesc"/>
    <category label="@ui_CCFPS"/>
@@ -80,6 +81,20 @@
   <flight_move_strafe_longitudinal invert="1"/>
  </options>
  <modifiers />
+ <actionmap name="seat_general">
+  <action name="v_toggle_missile_mode">
+   <rebind input="js2_button22"/>
+  </action>
+  <action name="v_toggle_quantum_mode">
+   <rebind input="js1_button3"/>
+  </action>
+  <action name="v_toggle_scan_mode">
+   <rebind input="js2_button21"/>
+  </action>
+  <action name="v_view_look_behind">
+   <rebind input="js2_hat1_down"/>
+  </action>
+ </actionmap>
  <actionmap name="spaceship_general">
   <action name="v_close_all_doors">
    <rebind input="js1_button7"/>
@@ -88,15 +103,6 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_cooler_throttle_up">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="v_eject">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="v_emergency_exit">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="v_exit">
    <rebind input="js2_ "/>
   </action>
   <action name="v_flightready">
@@ -146,9 +152,6 @@
   <action name="v_view_interact">
    <rebind input="js2_ "/>
   </action>
-  <action name="v_view_look_behind">
-   <rebind input="js2_hat1_down"/>
-  </action>
   <action name="v_view_mode">
    <rebind input="js2_ "/>
   </action>
@@ -186,9 +189,6 @@
   </action>
   <action name="v_autoland">
    <rebind input="js1_button20"/>
-  </action>
-  <action name="v_dock_toggle_view">
-   <rebind input="js2_hat1_up"/>
   </action>
   <action name="v_ifcs_toggle_cruise_control">
    <rebind input="js1_button10"/>
@@ -280,12 +280,6 @@
   <action name="v_toggle_landing_system">
    <rebind input="js1_button20"/>
   </action>
-  <action name="v_toggle_qdrive_engagement">
-   <rebind input="js1_button3"/>
-  </action>
-  <action name="v_toggle_qdrive_spooling">
-   <rebind input="js1_button3"/>
-  </action>
   <action name="v_toggle_vtol">
    <rebind input="js1_button19"/>
   </action>
@@ -300,6 +294,11 @@
   </action>
   <action name="v_yaw_right">
    <rebind input="js2_ "/>
+  </action>
+ </actionmap>
+ <actionmap name="spaceship_quantum">
+  <action name="v_toggle_qdrive_engagement">
+   <rebind input="js1_button3"/>
   </action>
  </actionmap>
  <actionmap name="spaceship_targeting">
@@ -453,22 +452,17 @@
   </action>
  </actionmap>
  <actionmap name="spaceship_scanning">
+  <action name="v_dec_scan_focus_level">
+   <rebind input="js1_hat1_up"/>
+  </action>
+  <action name="v_inc_scan_focus_level">
+   <rebind input="js1_hat1_down"/>
+  </action>
   <action name="v_scanning_trigger_scan">
-   <rebind input="js2_button1"/>
+   <rebind input="js1_hat1_right"/>
   </action>
-  <action name="v_toggle_scan_mode">
-   <rebind input="js2_button21"/>
-  </action>
- </actionmap>
- <actionmap name="spaceship_ping">
-  <action name="v_dec_ping_focus_angle">
-   <rebind input="js2_button8"/>
-  </action>
-  <action name="v_inc_ping_focus_angle">
-   <rebind input="js2_button6"/>
-  </action>
-  <action name="v_invoke_ping">
-   <rebind input="js2_button2"/>
+  <action name="v_toggle_fps_scan_mode">
+   <rebind input="js1_hat1_left"/>
   </action>
  </actionmap>
  <actionmap name="spaceship_mining">
@@ -496,9 +490,6 @@
   <action name="v_toggle_mining_laser_type">
    <rebind input="js1_button3"/>
   </action>
-  <action name="v_toggle_mining_mode">
-   <rebind input="js1_button6"/>
-  </action>
  </actionmap>
  <actionmap name="spaceship_weapons">
   <action name="v_attack1_group1">
@@ -512,9 +503,6 @@
   </action>
  </actionmap>
  <actionmap name="spaceship_missiles">
-  <action name="v_weapon_arm_missile">
-   <rebind input="js2_button22"/>
-  </action>
   <action name="v_weapon_cycle_missile_back">
    <rebind input="js2_ "/>
   </action>
@@ -522,12 +510,6 @@
    <rebind input="js2_button17"/>
   </action>
   <action name="v_weapon_launch_missile">
-   <rebind input="js2_button22"/>
-  </action>
-  <action name="v_weapon_launch_missile_cinematic">
-   <rebind input="js2_button4"/>
-  </action>
-  <action name="v_weapon_unarm_all_missiles">
    <rebind input="js2_button22"/>
   </action>
  </actionmap>
@@ -561,18 +543,6 @@
   </action>
  </actionmap>
  <actionmap name="spaceship_power">
-  <action name="v_power_focus_shields">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="v_power_focus_thrusters">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="v_power_focus_weapons">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="v_power_reset_focus">
-   <rebind input="js2_ "/>
-  </action>
   <action name="v_power_throttle_down">
    <rebind input="js2_ "/>
   </action>
@@ -599,32 +569,14 @@
   </action>
  </actionmap>
  <actionmap name="spaceship_radar">
-  <action name="v_radar_cycle_focus_back">
-   <rebind input="js2_ "/>
+  <action name="v_dec_ping_focus_angle">
+   <rebind input="js1_hat1_down"/>
   </action>
-  <action name="v_radar_cycle_focus_fwd">
-   <rebind input="js2_ "/>
+  <action name="v_inc_ping_focus_angle">
+   <rebind input="js1_hat1_up"/>
   </action>
-  <action name="v_radar_cycle_mode_back">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="v_radar_cycle_mode_fwd">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="v_radar_cycle_zoom_back">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="v_radar_cycle_zoom_fwd">
-   <rebind input="js2_button29"/>
-  </action>
-  <action name="v_radar_toggle_active_or_passive">
-   <rebind input="js2_button28"/>
-  </action>
-  <action name="v_radar_toggle_onoff">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="v_radar_toggle_view_focus">
-   <rebind input="js2_ "/>
+  <action name="v_invoke_ping">
+   <rebind input="js1_hat1_right"/>
   </action>
  </actionmap>
  <actionmap name="spaceship_hud">
@@ -949,9 +901,6 @@
   <action name="v_close_all_doors">
    <rebind input="js1_button7"/>
   </action>
-  <action name="v_exit">
-   <rebind input="js2_ "/>
-  </action>
   <action name="v_flightready">
    <rebind input="js2_button27"/>
   </action>
@@ -974,9 +923,6 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_view_cycle_fwd">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="v_view_look_behind">
    <rebind input="js2_ "/>
   </action>
   <action name="v_view_pitch">
@@ -1282,12 +1228,16 @@
   </action>
   <action name="headtrack_camera_enabled">
    <rebind input="kb1_mouse4"/>
+   <rebind input="js2_button5"/>
   </action>
   <action name="headtrack_enabled">
    <rebind input="kb1_mouse4"/>
-   <rebind input="js2_ "/>
+   <rebind input="js2_button5"/>
   </action>
   <action name="headtrack_hold">
+   <rebind input="js2_ "/>
+  </action>
+  <action name="headtrack_recenter_device">
    <rebind input="js2_ "/>
   </action>
  </actionmap>
