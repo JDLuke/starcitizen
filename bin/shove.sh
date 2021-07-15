@@ -8,7 +8,7 @@ then
 else
 
 	REGION="PTU"
-	SC_PATH="/c/Program Files/Roberts Space Industries/StarCitizen/$REGION/USER/Controls/Mappings"
+	SC_PATH="/c/Program Files/Roberts Space Industries/StarCitizen/$REGION/USER/Client/0/Controls/Mappings"
 	NAME=$1
 	DESTINATION=data/controls
 

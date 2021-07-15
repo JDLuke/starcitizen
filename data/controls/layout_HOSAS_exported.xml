@@ -72,17 +72,12 @@
   <mgv_move_yaw exponent="2.3"/>
  </options>
  <options type="joystick" instance="1" Product=" VKB-Sim Gladiator NXT L   {0201231D-0000-0000-0000-504944564944}">
-  <fps_move_longitudinal invert="1"/>
-  <eva_move_strafe_longitudinal invert="1"/>
-  <eva_move_strafe_vertical invert="1"/>
   <flight_move_strafe_vertical invert="1"/>
   <flight_move_strafe_longitudinal invert="1"/>
-  <flight_view exponent="1"/>
-  <mining_throttle invert="0"/>
  </options>
  <options type="joystick" instance="2" Product=" VKB-Sim Gladiator NXT R   {0200231D-0000-0000-0000-504944564944}">
-  <flight_view exponent="1"/>
-  <mining_throttle invert="0"/>
+  <flight_move_strafe_vertical invert="1"/>
+  <flight_move_strafe_longitudinal invert="1"/>
  </options>
  <modifiers />
  <actionmap name="spaceship_general">
@@ -191,6 +186,9 @@
   </action>
   <action name="v_autoland">
    <rebind input="js1_button20"/>
+  </action>
+  <action name="v_dock_toggle_view">
+   <rebind input="js2_hat1_up"/>
   </action>
   <action name="v_ifcs_toggle_cruise_control">
    <rebind input="js1_button10"/>
@@ -502,59 +500,6 @@
    <rebind input="js1_button6"/>
   </action>
  </actionmap>
- <actionmap name="turret_main">
-  <action name="turret_gyromode">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="turret_limiter_abs">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="turret_limiter_rel">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="turret_limiter_rel_decrease">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="turret_limiter_rel_increase">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="turret_limiter_toggle">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="turret_pitch">
-   <rebind input="js2_y"/>
-  </action>
-  <action name="turret_pitch_down">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="turret_pitch_mouse">
-   <rebind input="mo1_ "/>
-  </action>
-  <action name="turret_pitch_up">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="turret_remote_exit">
-   <rebind input="js1_button27"/>
-  </action>
-  <action name="turret_toggle_esp">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="turret_toggle_mouse_mode">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="turret_yaw">
-   <rebind input="js2_x"/>
-  </action>
-  <action name="turret_yaw_left">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="turret_yaw_mouse">
-   <rebind input="mo1_ "/>
-  </action>
-  <action name="turret_yaw_right">
-   <rebind input="js2_ "/>
-  </action>
- </actionmap>
  <actionmap name="spaceship_weapons">
   <action name="v_attack1_group1">
    <rebind input="js2_button1"/>
@@ -647,7 +592,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_power_toggle_thrusters">
-   <rebind input="js2_button28"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="v_power_toggle_weapons">
    <rebind input="js2_ "/>
@@ -673,7 +618,7 @@
    <rebind input="js2_button29"/>
   </action>
   <action name="v_radar_toggle_active_or_passive">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button28"/>
   </action>
   <action name="v_radar_toggle_onoff">
    <rebind input="js2_ "/>
@@ -738,9 +683,6 @@
  <actionmap name="player">
   <action name="attack1">
    <rebind input="js2_button1"/>
-  </action>
-  <action name="combatheal">
-   <rebind input="js2_ "/>
   </action>
   <action name="combathealtarget">
    <rebind input="js2_ "/>
@@ -839,9 +781,6 @@
    <rebind input="js2_ "/>
   </action>
   <action name="prone">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="refillgastank">
    <rebind input="js2_ "/>
   </action>
   <action name="reload">
@@ -1199,9 +1138,6 @@
   <action name="toggle_contact">
    <rebind input="js1_button28"/>
   </action>
-  <action name="u_exit">
-   <rebind input="js2_ "/>
-  </action>
   <action name="ui_hide_hint">
    <rebind input="js2_button2"/>
   </action>
@@ -1442,9 +1378,6 @@
    <rebind input="js2_ "/>
   </action>
   <action name="pc_select">
-   <rebind input="js2_ "/>
-  </action>
-  <action name="pc_throw_decrease">
    <rebind input="js2_ "/>
   </action>
   <action name="pc_ui_back">
