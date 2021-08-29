@@ -7,7 +7,7 @@ then
 	echo "You need to specify a control layout name, the same one used when saving the file in Star Citizen"
 else
 
-	REGION="PTU"
+	REGION="LIVE"
 	SC_PATH="/c/Program Files/Roberts Space Industries/StarCitizen/$REGION/USER/Client/0/Controls/Mappings"
 	NAME=$1
 	DESTINATION=data/controls
