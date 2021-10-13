@@ -58,7 +58,7 @@
   <option input="@pause_OptionsMouseSmoothing" saturation="0.089999989"/>
  </deviceoptions>
  <options type="keyboard" instance="1" Product="Keyboard {6F1D2B61-D5A0-11CF-BFC7-444553540000}">
-  <fps exponent="1.3000001"/>
+  <fps exponent="0.69999999"/>
   <flight_move_pitch exponent="2.3"/>
   <flight_move_yaw exponent="2.3"/>
   <flight_move_speed_range_rel exponent="2.3"/>
@@ -74,6 +74,7 @@
   <mgv_move_yaw exponent="2.3"/>
  </options>
  <options type="joystick" instance="1" Product=" VKB-Sim Gladiator NXT L   {0201231D-0000-0000-0000-504944564944}">
+  <fps_move_longitudinal invert="1"/>
   <eva_move_strafe_longitudinal invert="1"/>
   <flight_move_strafe_vertical invert="1"/>
   <flight_move_strafe_longitudinal invert="1"/>
@@ -144,10 +145,10 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_view_dynamic_zoom_rel_in">
-   <rebind input="js2_button23"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="v_view_dynamic_zoom_rel_out">
-   <rebind input="js2_button24"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="v_view_freelook_mode">
    <rebind input="js2_ "/>
@@ -242,7 +243,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_speed_range_rel">
-   <rebind input="js2_ "/>
+   <rebind input="js2_roty"/>
   </action>
   <action name="v_speed_range_up">
    <rebind input="js2_ "/>
@@ -332,7 +333,7 @@
    <rebind input="js2_ "/>
   </action>
   <action name="v_target_cycle_reticle_mode">
-   <rebind input="js2_ "/>
+   <rebind input="js2_button15"/>
   </action>
   <action name="v_target_lock_selected">
    <rebind input="js2_button6"/>
@@ -529,7 +530,7 @@
  </actionmap>
  <actionmap name="turret_advanced">
   <action name="turret_change_firemode">
-   <rebind input="js1_button1"/>
+   <rebind input="js1_button10"/>
   </action>
   <action name="turret_gyromode">
    <rebind input="js1_button13"/>
@@ -548,11 +549,8 @@
   </action>
  </actionmap>
  <actionmap name="spaceship_weapons">
-  <action name="v_attack1_group1">
-   <rebind input="js2_button1"/>
-  </action>
   <action name="v_attack1_group2">
-   <rebind input="js1_button1"/>
+   <rebind input="js2_button1"/>
   </action>
   <action name="v_weapon_cycle_aimmode">
    <rebind input="js2_button19"/>
@@ -636,6 +634,7 @@
  <actionmap name="spaceship_hud">
   <action name="v_cycle_pitch_ladder_mode">
    <rebind input="kb1_period"/>
+   <rebind input="js2_button27"/>
   </action>
   <action name="v_hud_cancel">
    <rebind input="js2_ "/>
